@@ -1,0 +1,12 @@
+.navbar-menu-container{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    color: whitesmoke;
+    text-decoration: none;
+    cursor:pointer;
+}
+.home-menu,.browse-menu{
+    margin-right: 20px;
+}
