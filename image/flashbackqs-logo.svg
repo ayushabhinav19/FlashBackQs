@@ -1,0 +1,7 @@
+<svg width="220" height="48" viewBox="0 0 220 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <text x="10" y="34" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="800">
+    <tspan fill="#23235B">Flash</tspan><tspan fill="#FFD700">Back</tspan>
+  </text>
+  <text x="160" y="34" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#23235B">Qs</text>
+  <rect x="160" y="38" width="38" height="4" rx="2" fill="#FFD700"/>
+</svg> 

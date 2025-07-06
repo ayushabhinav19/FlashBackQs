@@ -1,13 +1,20 @@
 import './App.css'
-import { Navbar } from './components/navbar'
+import { Footer } from './components/Footer/footer'
+import { Navbar } from './components/Navbar/navbar'
+import { Hero } from './components/Hero/hero'
+import { SemesterSubjects } from './components/SemesterSubjects/semesterSubjects'
+import { Contact } from './components/Contact/contact'
 
 function App() {
-
   return (
     <>
-     <div className='navbar-container'>
-        <Navbar></Navbar>
-     </div>
+      <Navbar />
+      <main className="main-content">
+        <Hero />
+        <SemesterSubjects />
+        <Contact />
+      </main>
+      <Footer />
     </>
   )
 }

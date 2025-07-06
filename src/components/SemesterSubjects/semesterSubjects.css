@@ -1,0 +1,154 @@
+.semester-section {
+  padding: 60px 0;
+  background: #f8fafc;
+}
+
+.semester-section-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.semester-section-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.semester-section-header p {
+  color: #3f3fa6;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.semester-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.semester-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  border: 1.5px solid #3f3fa6;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 320px;
+  transition: box-shadow 0.2s;
+}
+
+.semester-card:hover {
+  box-shadow: 0 6px 24px rgba(63,63,166,0.13);
+}
+
+.semester-title {
+  background: #3f3fa6;
+  color: white;
+  font-weight: 700;
+  font-size: 1.15rem;
+  padding: 16px 24px;
+  border-bottom: 1px solid #e2e8f0;
+  letter-spacing: 0.5px;
+}
+
+.subject-list {
+  list-style: disc inside;
+  padding: 20px 24px;
+  margin: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.subject-item {
+  color: #222;
+  font-size: 1.05rem;
+  padding: 6px 0;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.15s, color 0.15s;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.subject-item:last-child {
+  border-bottom: none;
+}
+
+.subject-item:hover {
+  background: #f0f4ff;
+  color: #3f3fa6;
+}
+
+.subject-icon {
+  font-size: 1.25rem;
+  color: #3f3fa6;
+  display: flex;
+  align-items: center;
+  transition: color 0.15s;
+}
+
+.subject-item:hover .subject-icon {
+  color: #23308a;
+}
+
+@media (max-width: 768px) {
+  .semester-section {
+    padding: 40px 0;
+  }
+  .semester-grid {
+    gap: 20px;
+  }
+  .semester-title {
+    font-size: 1rem;
+    padding: 12px 16px;
+  }
+  .subject-list {
+    padding: 14px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .semester-section-header h2 {
+    font-size: 1.3rem;
+  }
+  .semester-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .semester-section {
+    padding: 24px 0;
+  }
+  .semester-section-header h2 {
+    font-size: 1.1rem;
+  }
+  .semester-grid {
+    gap: 12px;
+    grid-template-columns: 1fr;
+    padding: 0 4vw;
+  }
+  .semester-card {
+    min-width: 0;
+    padding: 0 2vw;
+  }
+  .semester-title {
+    font-size: 0.98rem;
+    padding: 10px 10px;
+  }
+  .subject-list {
+    padding: 10px 10px;
+    gap: 4px;
+  }
+  .subject-item {
+    font-size: 0.95rem;
+    padding: 4px 0;
+  }
+} 
